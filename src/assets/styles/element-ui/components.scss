@@ -1,0 +1,209 @@
+@use "../colors.scss" as *;
+
+$font-family: "Poppins";
+$font-size-input: 16px;
+$font-weight: 400;
+$line-height-input: 24px;
+$font-size-table-header: 14px;
+$line-height-table-header: 20px;
+$line-height-table-body: 22.5px;
+$font-size-table-body: 15px;
+
+.el-input {
+  font-family: $font-family;
+  font-size: $font-size-input;
+  font-weight: $font-weight;
+  line-height: $line-height-input;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  &__inner {
+    font-family: $font-family;
+    font-size: $font-size-input;
+    font-weight: $font-weight;
+    line-height: $line-height-input;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  &__prefix {
+    font-size: 19px;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.el-tooltip__popper {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.el-table thead tr th {
+  font-family: $font-family;
+  font-size: $font-size-table-header;
+  font-weight: $font-weight;
+  line-height: $line-height-table-header;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.el-table tbody tr td {
+  font-family: $font-family;
+  font-size: $font-size-table-body;
+  font-weight: $font-weight;
+  line-height: $line-height-table-body;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.el-table__header-wrapper th {
+  background-color: #faf9fb !important;
+  height: 48px !important;
+}
+
+.el-table__body-wrapper td {
+  height: 48px !important;
+}
+.el-table__body-wrapper tr {
+  &:hover {
+    background-color: #faf9fb !important;
+  }
+}
+.el-input__wrapper {
+  background-color: #faf9fb !important;
+  .el-input {
+    border: 1px solid #f2f1f6 !important;
+    height: 46px !important;
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      color: #6a6b70;
+    }
+  }
+}
+
+.drawers {
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+
+  .demo-drawer__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .el-drawer__header {
+    margin-bottom: 10px;
+
+    .el-drawer__title {
+      font-family: $font-family;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: #070811;
+    }
+  }
+
+  .el-drawer__body {
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+.white-form {
+  .el-input__wrapper {
+    background-color: white !important;
+  }
+}
+
+.el-pagination {
+  display: flex;
+  justify-content: space-between;
+  .btn-next,
+  .btn-prev {
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    background-color: #fff !important;
+    padding: 12px 9px;
+    font-size: 13.801px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.716px;
+  }
+
+  ul.el-pager {
+    li {
+      color: #070811 !important;
+      // color: #fff !important;
+      font-size: 13.801px !important;
+      padding: 8px !important;
+      font-weight: 500 !important;
+      line-height: 19.716px !important;
+      background-color: #fff !important;
+      border-radius: 8px !important;
+    }
+
+    .is-active {
+      color: #fff !important;
+      background-color: #070811 !important;
+    }
+  }
+}
+.el-message-box__btns {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 15px !important;
+
+  .el-button {
+    width: 81.72px;
+    &:nth-child(2) {
+      order: -1 !important;
+    }
+  }
+}
+.el-upload-list__item.is-ready {
+  color: #6a6b70;
+  border-radius: 4px;
+  // padding: 8px;
+  // margin-bottom: 25px;
+}
+
+.custom-date-picker {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.el-range-input {
+  padding: 8px 12px;
+  border: 1px solid #dcdfe6;
+  border-radius: 4px;
+  outline: none;
+}
+
+.el-range-separator {
+  padding: 0 8px;
+  color: #9e9e9e;
+  font-weight: 500;
+}
+
+.custom-message-box .el-message-box__btns {
+  flex-direction: row-reverse; 
+}

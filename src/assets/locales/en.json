@@ -1,0 +1,45 @@
+{
+  "shared": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "yes": "Yes",
+    "select": "Select",
+    "search": "Search",
+    "text": "Text",
+    "type": "Тип",
+    "created": "Successfully created",
+    "updated": "Successfully updated",
+    "requestSent": "The request has been sent",
+    "deleteConfirm": "Это действие не может быть отменено. Продолжать?",
+    "warning": "Warning",
+    "unarchived": "Successfully Unarchived",
+    "archived": "Successfully Archived",
+    "deleteCompleted": "Removal completed",
+    "deleted": "Successfully Deleted",
+    "download": "Successfully Download",
+    "addedstudent": "Student successfully added"
+  },
+
+  "validation": {
+    "fileFill": "Please fill in this file",
+    "fillField": "Please fill in this field",
+    "inputEmail": "Please enter an email address",
+    "minimumLength": "Minimum length {value}",
+    "maxLength": "Maximum length {value}",
+    "maximumLength": "Must be at least {value}",
+    "fieldNumber": "Enter the number in this field",
+    "pattern": "Enter in correct format",
+    "passwordsDontMatch": "The two passwords don't match!",
+    "shortNameAlreadyExists": "This abbreviation is already taken. Please type a different one",
+    "invalidTime": "The time format is invalid.",
+    "startBeforeMinTime": "Start time must be after or equal to {value}.",
+    "startAfterMaxTime": "Start time must be before or equal to {value}.",
+    "endBeforeMinTime": "End time must be after or equal to {value}.",
+    "endAfterMaxTime": "End time must be before or equal to {value}.",
+    "endBeforeStart": "End time must be after the start time.",
+    "startOutOfRange": "Start time is out of the permitted range.",
+    "endOutOfRange": "End time is out of the permitted range.",
+    "startBeforeEnd": "Start time must be before the end time.",
+    "greaterThanvalue": "The time entered is greater than {value}. Please check the time again."
+  }
+}
